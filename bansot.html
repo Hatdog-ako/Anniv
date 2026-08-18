@@ -1,0 +1,4301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Our anniversary 💜</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+>
+
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --purple:
+        #8b5cf6;
+
+    --light-purple:
+        #c084fc;
+
+    --pink:
+        #e879f9;
+
+    --deep:
+        #0d0418;
+
+    --white:
+        #ffffff;
+
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+}
+
+body {
+
+    font-family:
+        "Poppins",
+        sans-serif;
+
+    color: white;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 20%,
+            #8b5cf655,
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 80%,
+            #d946ef44,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #0d0418,
+            #211033,
+            #10051b
+        );
+
+}
+
+
+/* =====================================================
+   BACKGROUND
+===================================================== */
+
+.background {
+
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+}
+
+.glow {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter:
+        blur(90px);
+
+    opacity: .35;
+
+}
+
+.glow.one {
+
+    width: 350px;
+    height: 350px;
+
+    background:
+        #9333ea;
+
+    left: -150px;
+    top: -120px;
+
+}
+
+.glow.two {
+
+    width: 400px;
+    height: 400px;
+
+    background:
+        #c026d3;
+
+    right: -160px;
+    bottom: -160px;
+
+}
+
+
+/* =====================================================
+   PAGE SYSTEM
+===================================================== */
+
+.pages {
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.page {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateX(80px)
+        scale(.97);
+
+    transition:
+
+        opacity .7s ease,
+
+        transform
+        .7s cubic-bezier(
+            .65,
+            0,
+            .35,
+            1
+        ),
+
+        visibility .7s;
+
+}
+
+.page.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateX(0)
+        scale(1);
+
+}
+
+.page.exit-left {
+
+    transform:
+        translateX(-80px)
+        scale(.97);
+
+}
+
+
+/* =====================================================
+   CONTENT CARD
+===================================================== */
+
+.content {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    max-height: 92vh;
+
+    overflow-y: auto;
+
+    text-align: center;
+
+    padding:
+        40px 25px;
+
+    border-radius:
+        30px;
+
+    background:
+        rgba(255,255,255,.07);
+
+    border:
+        1px solid
+        rgba(255,255,255,.16);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+        0 20px 70px
+        rgba(0,0,0,.4);
+
+}
+
+.content::-webkit-scrollbar {
+
+    width: 5px;
+
+}
+
+.content::-webkit-scrollbar-thumb {
+
+    background:
+        #a855f7;
+
+    border-radius:
+        20px;
+
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+.small-title {
+
+    font-size:
+        12px;
+
+    letter-spacing:
+        4px;
+
+    text-transform:
+        uppercase;
+
+    color:
+        #d8b4fe;
+
+    margin-bottom:
+        15px;
+
+}
+
+h1,
+h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+}
+
+h1 {
+
+    font-size:
+        clamp(
+            55px,
+            12vw,
+            100px
+        );
+
+    line-height:
+        .9;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #e9d5ff,
+            #f0abfc
+        );
+
+    -webkit-background-clip:
+        text;
+
+    background-clip:
+        text;
+
+    color:
+        transparent;
+
+}
+
+h2 {
+
+    font-size:
+        clamp(
+            40px,
+            8vw,
+            65px
+        );
+
+    line-height:
+        1;
+
+    margin-bottom:
+        18px;
+
+}
+
+p {
+
+    color:
+        #eee4f7;
+
+    font-size:
+        15px;
+
+    line-height:
+        1.9;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn {
+
+    margin-top:
+        25px;
+
+    padding:
+        13px 28px;
+
+    border:
+        1px solid
+        #ffffff44;
+
+    border-radius:
+        50px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #8b5cf6,
+            #c026d3
+        );
+
+    color:
+        white;
+
+    font-family:
+        inherit;
+
+    font-size:
+        14px;
+
+    font-weight:
+        500;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 8px 25px
+        #8b5cf644;
+
+    transition:
+        .3s ease;
+
+}
+
+.btn:hover {
+
+    transform:
+        translateY(-3px)
+        scale(1.03);
+
+    box-shadow:
+        0 12px 35px
+        #c026f355;
+
+}
+
+.btn:active {
+
+    transform:
+        scale(.95);
+
+}
+
+
+/* =====================================================
+   ENVELOPE
+===================================================== */
+
+.envelope {
+
+    width:
+        190px;
+
+    height:
+        125px;
+
+    margin:
+        0 auto 30px;
+
+    position:
+        relative;
+
+    cursor:
+        pointer;
+
+    animation:
+        envelopeFloat
+        3s
+        ease-in-out
+        infinite;
+
+}
+
+@keyframes envelopeFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-10px);
+
+    }
+
+}
+
+.envelope-body {
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #a855f7,
+            #6d28d9
+        );
+
+    border-radius:
+        8px;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,.3);
+
+}
+
+.envelope-flap {
+
+    position:
+        absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    border-left:
+        95px solid transparent;
+
+    border-right:
+        95px solid transparent;
+
+    border-top:
+        70px solid #c084fc;
+
+    transform-origin:
+        top;
+
+    transition:
+        .8s
+        cubic-bezier(
+            .68,
+            -.55,
+            .27,
+            1.55
+        );
+
+    z-index:
+        3;
+
+}
+
+.envelope.open
+.envelope-flap {
+
+    transform:
+        rotateX(180deg);
+
+}
+
+.envelope-heart {
+
+    position:
+        absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        );
+
+    font-size:
+        35px;
+
+    z-index:
+        5;
+
+    transition:
+        .5s;
+
+}
+
+.envelope.open
+.envelope-heart {
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        )
+        scale(0);
+
+}
+
+
+/* =====================================================
+   GIFT
+===================================================== */
+
+.gift {
+
+    width:
+        170px;
+
+    height:
+        140px;
+
+    margin:
+        25px auto 30px;
+
+    position:
+        relative;
+
+    cursor:
+        pointer;
+
+    animation:
+        giftFloat
+        2.5s
+        ease-in-out
+        infinite;
+
+}
+
+@keyframes giftFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-8px)
+            rotate(1deg);
+
+    }
+
+}
+
+.gift-box {
+
+    position:
+        absolute;
+
+    width:
+        170px;
+
+    height:
+        110px;
+
+    bottom:
+        0;
+
+    border-radius:
+        8px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent 43%,
+            #f5d0fe 43%,
+            #f5d0fe 57%,
+            transparent 57%
+        ),
+
+        linear-gradient(
+            135deg,
+            #9333ea,
+            #6d28d9
+        );
+
+    box-shadow:
+        0 15px 30px
+        rgba(0,0,0,.35);
+
+}
+
+.gift-lid {
+
+    position:
+        absolute;
+
+    width:
+        185px;
+
+    height:
+        35px;
+
+    left:
+        -7px;
+
+    top:
+        15px;
+
+    border-radius:
+        7px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent 43%,
+            #f5d0fe 43%,
+            #f5d0fe 57%,
+            transparent 57%
+        ),
+
+        linear-gradient(
+            135deg,
+            #a855f7,
+            #7e22ce
+        );
+
+    z-index:
+        3;
+
+    transition:
+        transform
+        .9s
+        cubic-bezier(
+            .68,
+            -.55,
+            .27,
+            1.55
+        );
+
+}
+
+.gift.open
+.gift-lid {
+
+    transform:
+        translateY(-80px)
+        rotate(-8deg);
+
+}
+
+.ribbon {
+
+    position:
+        absolute;
+
+    width:
+        25px;
+
+    height:
+        100%;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        #f5d0fe;
+
+}
+
+.bow {
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    top:
+        -20px;
+
+    transform:
+        translateX(-50%);
+
+    font-size:
+        45px;
+
+    z-index:
+        5;
+
+    transition:
+        .5s;
+
+}
+
+.gift.open
+.bow {
+
+    transform:
+        translateX(-50%)
+        translateY(-75px)
+        rotate(20deg);
+
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.message-box {
+
+    min-height:
+        180px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        20px;
+
+}
+
+.message-text {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(
+            24px,
+            5vw,
+            34px
+        );
+
+    line-height:
+        1.5;
+
+    color:
+        #f9edff;
+
+}
+
+
+/* =====================================================
+   MEMORY GALLERY
+===================================================== */
+
+.memories-page
+.content {
+
+    max-width:
+        850px;
+
+}
+
+.memory-gallery {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap:
+        12px;
+
+    margin:
+        25px 0;
+
+}
+
+.memory-photo {
+
+    position:
+        relative;
+
+    height:
+        180px;
+
+    overflow:
+        hidden;
+
+    border-radius:
+        18px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,.25);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.memory-photo:hover {
+
+    transform:
+        translateY(-7px)
+        scale(1.02);
+
+    box-shadow:
+        0 15px 35px
+        rgba(168,85,247,.35);
+
+}
+
+.memory-photo img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+    transition:
+        transform .5s ease,
+        filter .5s ease;
+
+}
+
+.memory-photo:hover img {
+
+    transform:
+        scale(1.08);
+
+    filter:
+        brightness(.8);
+
+}
+
+.photo-overlay {
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        center;
+
+    padding:
+        15px;
+
+    background:
+
+        linear-gradient(
+            transparent,
+            rgba(20,5,35,.9)
+        );
+
+    opacity:
+        0;
+
+    transition:
+        opacity .3s ease;
+
+    font-size:
+        13px;
+
+}
+
+.memory-photo:hover
+.photo-overlay {
+
+    opacity:
+        1;
+
+}
+
+
+/* =====================================================
+   VIDEO
+===================================================== */
+
+.video-title {
+
+    margin-top:
+        30px;
+
+}
+
+.video-container {
+
+    margin-top:
+        15px;
+
+    border-radius:
+        20px;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
+    background:
+        #08030d;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,.3);
+
+}
+
+.video-container video {
+
+    display:
+        block;
+
+    width:
+        100%;
+
+    max-height:
+        450px;
+
+    object-fit:
+        contain;
+
+    background:
+        black;
+
+}
+
+
+/* =====================================================
+   PHOTO VIEWER
+===================================================== */
+
+.photo-viewer {
+
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    background:
+        rgba(8,2,15,.94);
+
+    backdrop-filter:
+        blur(12px);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        25px;
+
+    opacity:
+        0;
+
+    visibility:
+        hidden;
+
+    transition:
+        .35s;
+
+    z-index:
+        500;
+
+}
+
+.photo-viewer.show {
+
+    opacity:
+        1;
+
+    visibility:
+        visible;
+
+}
+
+.photo-viewer img {
+
+    max-width:
+        95%;
+
+    max-height:
+        90vh;
+
+    border-radius:
+        20px;
+
+    box-shadow:
+        0 20px 70px
+        rgba(0,0,0,.6);
+
+}
+
+.close-viewer {
+
+    position:
+        fixed;
+
+    top:
+        20px;
+
+    right:
+        20px;
+
+    width:
+        45px;
+
+    height:
+        45px;
+
+    border:
+        1px solid
+        #ffffff33;
+
+    border-radius:
+        50%;
+
+    background:
+        #ffffff15;
+
+    color:
+        white;
+
+    font-size:
+        22px;
+
+    cursor:
+        pointer;
+
+    z-index:
+        501;
+
+}
+
+
+/* =====================================================
+   CAKE
+===================================================== */
+
+.cake {
+
+    width:
+        210px;
+
+    height:
+        170px;
+
+    margin:
+        25px auto 20px;
+
+    position:
+        relative;
+
+    cursor:
+        pointer;
+
+    animation:
+        cakeFloat
+        3s
+        ease-in-out
+        infinite;
+
+}
+
+@keyframes cakeFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-8px);
+
+    }
+
+}
+
+.cake-layer {
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    border-radius:
+        12px;
+
+}
+
+.layer-bottom {
+
+    width:
+        190px;
+
+    height:
+        65px;
+
+    bottom:
+        0;
+
+    background:
+
+        linear-gradient(
+            to right,
+            #d8b4fe,
+            #a855f7
+        );
+
+    box-shadow:
+        inset
+        0 -10px 0
+        #7e22ce;
+
+}
+
+.layer-top {
+
+    width:
+        155px;
+
+    height:
+        55px;
+
+    bottom:
+        55px;
+
+    background:
+
+        linear-gradient(
+            to right,
+            #f0abfc,
+            #c084fc
+        );
+
+}
+
+.icing {
+
+    position:
+        absolute;
+
+    width:
+        155px;
+
+    height:
+        22px;
+
+    bottom:
+        92px;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        #fae8ff;
+
+    border-radius:
+        15px;
+
+}
+
+.candle {
+
+    position:
+        absolute;
+
+    width:
+        12px;
+
+    height:
+        48px;
+
+    bottom:
+        112px;
+
+    background:
+
+        repeating-linear-gradient(
+            45deg,
+            #fff,
+            #fff 5px,
+            #d8b4fe 5px,
+            #d8b4fe 10px
+        );
+
+    border-radius:
+        5px;
+
+}
+
+.candle:nth-of-type(4) {
+
+    left:
+        75px;
+
+}
+
+.candle:nth-of-type(5) {
+
+    left:
+        99px;
+
+}
+
+.candle:nth-of-type(6) {
+
+    left:
+        123px;
+
+}
+
+.flame {
+
+    position:
+        absolute;
+
+    width:
+        15px;
+
+    height:
+        23px;
+
+    bottom:
+        158px;
+
+    background:
+        #fbbf24;
+
+    border-radius:
+        50%;
+
+    box-shadow:
+
+        0 0 15px
+        #fbbf24,
+
+        0 0 30px
+        #f59e0b;
+
+    animation:
+        flame .6s
+        infinite alternate;
+
+}
+
+@keyframes flame {
+
+    from {
+
+        transform:
+            scale(.85)
+            rotate(-3deg);
+
+    }
+
+    to {
+
+        transform:
+            scale(1.1)
+            rotate(4deg);
+
+    }
+
+}
+
+.flame:nth-of-type(7) {
+
+    left:
+        73px;
+
+}
+
+.flame:nth-of-type(8) {
+
+    left:
+        97px;
+
+}
+
+.flame:nth-of-type(9) {
+
+    left:
+        121px;
+
+}
+
+.cake.blown
+.flame {
+
+    opacity:
+        0;
+
+    transform:
+        scale(0);
+
+    transition:
+        .4s;
+
+}
+
+
+/* =====================================================
+   FINAL HEART
+===================================================== */
+
+.big-heart {
+
+    font-size:
+        100px;
+
+    animation:
+        heartbeat
+        1.2s
+        infinite;
+
+    filter:
+        drop-shadow(
+            0 0 20px
+            #d946ef
+        );
+
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+
+        transform:
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            scale(1.18);
+
+    }
+
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+.heart {
+
+    position:
+        fixed;
+
+    bottom:
+        -30px;
+
+    pointer-events:
+        none;
+
+    z-index:
+        50;
+
+    animation:
+        heartRise
+        linear
+        forwards;
+
+}
+
+@keyframes heartRise {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(0)
+            scale(.5)
+            rotate(0);
+
+    }
+
+    15% {
+
+        opacity:
+            1;
+
+    }
+
+    to {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(-110vh)
+            scale(1.3)
+            rotate(25deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   SPARKLES
+===================================================== */
+
+.sparkle {
+
+    position:
+        fixed;
+
+    width:
+        5px;
+
+    height:
+        5px;
+
+    border-radius:
+        50%;
+
+    background:
+        white;
+
+    box-shadow:
+
+        0 0 10px
+        white,
+
+        0 0 20px
+        #d8b4fe;
+
+    pointer-events:
+        none;
+
+    animation:
+        sparkleAnim
+        1.5s
+        ease
+        forwards;
+
+    z-index:
+        100;
+
+}
+
+@keyframes sparkleAnim {
+
+    0% {
+
+        opacity:
+            0;
+
+        transform:
+            scale(0);
+
+    }
+
+    50% {
+
+        opacity:
+            1;
+
+        transform:
+            scale(1.5);
+
+    }
+
+    100% {
+
+        opacity:
+            0;
+
+        transform:
+            scale(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+.confetti {
+
+    position:
+        fixed;
+
+    top:
+        -20px;
+
+    width:
+        8px;
+
+    height:
+        14px;
+
+    z-index:
+        200;
+
+    animation:
+        confettiFall
+        linear
+        forwards;
+
+}
+
+@keyframes confettiFall {
+
+    to {
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   MUSIC BUTTON
+===================================================== */
+
+.music-btn {
+
+    position:
+        fixed;
+
+    right:
+        18px;
+
+    top:
+        18px;
+
+    width:
+        45px;
+
+    height:
+        45px;
+
+    border-radius:
+        50%;
+
+    border:
+        1px solid
+        #ffffff33;
+
+    background:
+        #ffffff12;
+
+    color:
+        white;
+
+    cursor:
+        pointer;
+
+    z-index:
+        300;
+
+    backdrop-filter:
+        blur(10px);
+
+}
+
+.music-btn:hover {
+
+    background:
+        #ffffff25;
+
+    transform:
+        rotate(10deg);
+
+}
+
+
+/* =====================================================
+   FLOWER PAGE
+===================================================== */
+
+.flower-page
+.content {
+
+    max-width:
+        900px;
+
+    min-height:
+        80vh;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    overflow:
+        hidden;
+
+    position:
+        relative;
+
+}
+
+.flower-page
+.content::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        420px;
+
+    height:
+        420px;
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(
+                216,
+                180,
+                254,
+                .22
+            ),
+            transparent 68%
+        );
+
+    top:
+        50%;
+
+    left:
+        50%;
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        );
+
+    pointer-events:
+        none;
+
+}
+
+.flower-title {
+
+    position:
+        relative;
+
+    z-index:
+        5;
+
+}
+
+.flower-subtitle {
+
+    position:
+        relative;
+
+    z-index:
+        5;
+
+    max-width:
+        520px;
+
+    margin-bottom:
+        5px;
+
+}
+
+
+/* =====================================================
+   FLOWER GARDEN
+===================================================== */
+
+.flower-garden {
+
+    width:
+        100%;
+
+    height:
+        390px;
+
+    position:
+        relative;
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        center;
+
+    gap:
+        25px;
+
+    margin-top:
+        5px;
+
+}
+
+.realistic-flower {
+
+    position:
+        relative;
+
+    width:
+        125px;
+
+    height:
+        350px;
+
+    transform-origin:
+        bottom center;
+
+    animation:
+        flowerSway
+        5s
+        ease-in-out
+        infinite;
+
+}
+
+.realistic-flower:nth-child(2) {
+
+    animation-delay:
+        -.8s;
+
+}
+
+.realistic-flower:nth-child(3) {
+
+    animation-delay:
+        -1.5s;
+
+}
+
+.realistic-flower:nth-child(4) {
+
+    animation-delay:
+        -2.2s;
+
+}
+
+.realistic-flower:nth-child(5) {
+
+    animation-delay:
+        -3s;
+
+}
+
+@keyframes flowerSway {
+
+    0%,
+    100% {
+
+        transform:
+            rotate(-2deg);
+
+    }
+
+    50% {
+
+        transform:
+            rotate(3deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   STEM
+===================================================== */
+
+.flower-stem {
+
+    position:
+        absolute;
+
+    width:
+        7px;
+
+    height:
+        240px;
+
+    left:
+        50%;
+
+    bottom:
+        0;
+
+    transform:
+        translateX(-50%);
+
+    border-radius:
+        10px;
+
+    background:
+
+        linear-gradient(
+            to right,
+            #315d38,
+            #6f9d61,
+            #294d31
+        );
+
+    box-shadow:
+        2px 0 5px
+        rgba(0,0,0,.25);
+
+}
+
+.flower-stem::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        2px;
+
+    height:
+        210px;
+
+    left:
+        2px;
+
+    top:
+        10px;
+
+    background:
+        rgba(
+            220,
+            255,
+            215,
+            .35
+        );
+
+    border-radius:
+        10px;
+
+}
+
+
+/* =====================================================
+   LEAVES
+===================================================== */
+
+.flower-leaf {
+
+    position:
+        absolute;
+
+    width:
+        65px;
+
+    height:
+        32px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #78a86a,
+            #315d38
+        );
+
+    border-radius:
+        100% 0 100% 0;
+
+    box-shadow:
+        inset
+        -4px
+        -4px
+        8px
+        rgba(0,0,0,.18);
+
+    z-index:
+        2;
+
+}
+
+.flower-leaf::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        48px;
+
+    height:
+        2px;
+
+    top:
+        50%;
+
+    left:
+        8px;
+
+    transform:
+        rotate(-25deg);
+
+    background:
+        rgba(
+            220,
+            255,
+            215,
+            .45
+        );
+
+}
+
+.leaf-left {
+
+    left:
+        2px;
+
+    bottom:
+        85px;
+
+    transform:
+        rotate(-25deg);
+
+}
+
+.leaf-right {
+
+    right:
+        2px;
+
+    bottom:
+        125px;
+
+    transform:
+        rotate(205deg);
+
+}
+
+
+/* =====================================================
+   BLOSSOM
+===================================================== */
+
+.blossom {
+
+    position:
+        absolute;
+
+    width:
+        115px;
+
+    height:
+        115px;
+
+    left:
+        50%;
+
+    top:
+        20px;
+
+    transform:
+        translateX(-50%);
+
+    z-index:
+        5;
+
+    animation:
+        blossomFloat
+        4s
+        ease-in-out
+        infinite;
+
+}
+
+@keyframes blossomFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateX(-50%)
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateX(-50%)
+            translateY(-5px);
+
+    }
+
+}
+
+
+/* =====================================================
+   OUTER PETALS
+===================================================== */
+
+.petal {
+
+    position:
+        absolute;
+
+    width:
+        53px;
+
+    height:
+        72px;
+
+    left:
+        50%;
+
+    top:
+        50%;
+
+    transform-origin:
+        50% 85%;
+
+    border-radius:
+        70% 70% 55% 55%;
+
+    background:
+
+        radial-gradient(
+            ellipse at 35% 25%,
+            #f3e8ff 0%,
+            #d8b4fe 22%,
+            #a855f7 55%,
+            #6b21a8 100%
+        );
+
+    box-shadow:
+
+        inset
+        -5px
+        -8px
+        12px
+        rgba(
+            74,
+            20,
+            120,
+            .25
+        ),
+
+        inset
+        5px
+        5px
+        10px
+        rgba(
+            255,
+            255,
+            255,
+            .18
+        ),
+
+        0
+        5px
+        12px
+        rgba(
+            50,
+            10,
+            70,
+            .2
+        );
+
+}
+
+.petal-1 {
+
+    transform:
+        translate(
+            -50%,
+            -82%
+        )
+        rotate(0deg);
+
+}
+
+.petal-2 {
+
+    transform:
+        translate(
+            -50%,
+            -82%
+        )
+        rotate(72deg);
+
+}
+
+.petal-3 {
+
+    transform:
+        translate(
+            -50%,
+            -82%
+        )
+        rotate(144deg);
+
+}
+
+.petal-4 {
+
+    transform:
+        translate(
+            -50%,
+            -82%
+        )
+        rotate(216deg);
+
+}
+
+.petal-5 {
+
+    transform:
+        translate(
+            -50%,
+            -82%
+        )
+        rotate(288deg);
+
+}
+
+
+/* =====================================================
+   INNER PETALS
+===================================================== */
+
+.inner-petal {
+
+    position:
+        absolute;
+
+    width:
+        35px;
+
+    height:
+        48px;
+
+    left:
+        50%;
+
+    top:
+        50%;
+
+    transform-origin:
+        50% 85%;
+
+    border-radius:
+        70% 70% 50% 50%;
+
+    background:
+
+        radial-gradient(
+            ellipse at 35% 25%,
+            #ffffff,
+            #e9d5ff 25%,
+            #c084fc 65%,
+            #7e22ce 100%
+        );
+
+    z-index:
+        8;
+
+}
+
+.inner-1 {
+
+    transform:
+        translate(
+            -50%,
+            -82%
+        )
+        rotate(36deg);
+
+}
+
+.inner-2 {
+
+    transform:
+        translate(
+            -50%,
+            -82%
+        )
+        rotate(108deg);
+
+}
+
+.inner-3 {
+
+    transform:
+        translate(
+            -50%,
+            -82%
+        )
+        rotate(180deg);
+
+}
+
+.inner-4 {
+
+    transform:
+        translate(
+            -50%,
+            -82%
+        )
+        rotate(252deg);
+
+}
+
+.inner-5 {
+
+    transform:
+        translate(
+            -50%,
+            -82%
+        )
+        rotate(324deg);
+
+}
+
+/* =====================================================
+   FLOWER CENTER
+===================================================== */
+
+.flower-center {
+
+    position:
+        absolute;
+
+    width:
+        28px;
+
+    height:
+        28px;
+
+    left:
+        50%;
+
+    top:
+        50%;
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        );
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle at 35% 30%,
+            #fff7c2,
+            #f5d76e 40%,
+            #b88616 100%
+        );
+
+    box-shadow:
+        0 2px 8px
+        rgba(0,0,0,.25);
+
+    z-index:
+        12;
+
+}
+
+.flower-center::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        5px;
+
+    height:
+        5px;
+
+    border-radius:
+        50%;
+
+    background:
+        #8b5e15;
+
+    top:
+        5px;
+
+    left:
+        8px;
+
+    box-shadow:
+
+        8px 2px #8b5e15,
+        3px 9px #8b5e15,
+        11px 11px #8b5e15;
+
+}
+
+
+/* =====================================================
+   SMALL FLOWERS
+===================================================== */
+
+.realistic-flower.small {
+
+    transform:
+        scale(.78);
+
+}
+
+.realistic-flower.small:nth-child(2) {
+
+    margin-right:
+        -20px;
+
+}
+
+.realistic-flower.small:nth-child(4) {
+
+    margin-left:
+        -20px;
+
+}
+
+
+/* =====================================================
+   FLOWER SPARKLES
+===================================================== */
+
+.flower-sparkle {
+
+    position:
+        absolute;
+
+    width:
+        4px;
+
+    height:
+        4px;
+
+    border-radius:
+        50%;
+
+    background:
+        white;
+
+    box-shadow:
+
+        0 0 8px
+        white,
+
+        0 0 18px
+        #d8b4fe;
+
+    pointer-events:
+        none;
+
+    animation:
+
+        flowerSparkle
+        2.5s
+        ease-in-out
+        infinite;
+
+}
+
+@keyframes flowerSparkle {
+
+    0%,
+    100% {
+
+        opacity:
+            0;
+
+        transform:
+            scale(.2);
+
+    }
+
+    50% {
+
+        opacity:
+            1;
+
+        transform:
+            scale(1.5);
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:650px) {
+
+    .flower-page
+    .content {
+
+        min-height:
+            85vh;
+
+        padding:
+            30px 12px;
+
+    }
+
+    .flower-garden {
+
+        height:
+            310px;
+
+        gap:
+            0;
+
+    }
+
+    .realistic-flower {
+
+        transform:
+            scale(.75);
+
+    }
+
+    .realistic-flower.small {
+
+        transform:
+            scale(.58);
+
+    }
+
+}
+
+@media(max-width:430px) {
+
+    .flower-garden {
+
+        height:
+            280px;
+
+    }
+
+    .realistic-flower {
+
+        transform:
+            scale(.58);
+
+    }
+
+    .realistic-flower.small {
+
+        transform:
+            scale(.45);
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div class="background">
+
+    <div class="glow one"></div>
+
+    <div class="glow two"></div>
+
+</div>
+
+
+<!-- =====================================================
+     MUSIC
+===================================================== -->
+
+<button
+    class="music-btn"
+    id="musicButton"
+>
+    ♫
+</button>
+
+
+<!-- =====================================================
+     ALL PAGES
+===================================================== -->
+
+<div class="pages">
+
+
+<!-- =====================================================
+     PAGE 1 — ENVELOPE
+===================================================== -->
+
+<section
+    class="page active"
+    id="page1"
+>
+
+<div class="content">
+
+<div class="small-title">
+    A little something for you
+</div>
+
+
+<div
+    class="envelope"
+    id="envelope"
+>
+
+    <div class="envelope-body"></div>
+
+    <div class="envelope-flap"></div>
+
+    <div class="envelope-heart">
+        💜
+    </div>
+
+</div>
+
+
+<h2>
+    Open this...
+</h2>
+
+
+<p>
+
+    My surprise for you😘
+
+    <br>
+
+    open mo lang to😗😗😗
+
+</p>
+
+
+<button
+    class="btn"
+    onclick="openEnvelope()"
+>
+    Open Letter
+</button>
+
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     PAGE 2 — MONTHSARY
+===================================================== -->
+
+<section
+    class="page"
+    id="page2"
+>
+
+<div class="content">
+
+<div class="small-title">
+    first year with you
+</div>
+
+
+<h1>
+
+    Happy<br>
+     Anniversary 
+
+</h1>
+
+
+<p style="margin-top:25px;">
+
+    To you noemie,
+
+    <br>
+
+    thank you for another beautiful
+     year together. 💜
+
+</p>
+
+
+<button
+    class="btn"
+    onclick="nextPage(3)"
+>
+    Continue ♡
+</button>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 3 — GIFT
+===================================================== -->
+
+<section
+    class="page"
+    id="page3"
+>
+
+<div class="content">
+
+<div class="small-title">
+    There's something inside
+</div>
+
+
+<div
+    class="gift"
+    id="gift"
+    onclick="openGift()"
+>
+
+<div class="bow">
+    🎀
+</div>
+
+
+<div class="gift-lid"></div>
+
+
+<div class="gift-box">
+
+<div class="ribbon"></div>
+
+</div>
+
+
+</div>
+
+
+<h2>
+    A little gift 🎁
+</h2>
+
+
+<p>
+
+    Click the gift and see
+    what's waiting for you.
+
+</p>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 4 — MESSAGES
+===================================================== -->
+
+<section
+    class="page"
+    id="page4"
+>
+
+<div class="content">
+
+<div class="small-title">
+    A few words for you
+</div>
+
+
+<div class="message-box">
+
+<div
+    class="message-text"
+    id="messageText"
+>
+
+    happy first anniversary po
+
+</div>
+
+</div>
+
+
+<button
+    class="btn"
+    onclick="nextMessage()"
+    id="messageButton"
+>
+    Next 💌
+</button>
+
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     PAGE 5 — MEMORIES
+===================================================== -->
+
+<section
+    class="page memories-page"
+    id="page5"
+>
+
+<div class="content">
+
+<div class="small-title">
+    Little pieces of us
+</div>
+
+
+<h2>
+    Our Memories 📸
+</h2>
+
+
+<p>
+
+    Some of my favorite moments
+    are the ones I've shared with you. 💜
+
+</p>
+
+
+<div class="memory-gallery">
+
+
+<div
+    class="memory-photo"
+    onclick="viewPhoto('photo1.jpg')"
+>
+
+<img
+    src="photo1.jpg"
+    alt="Our memory 1"
+>
+
+<div class="photo-overlay">
+    Our first memory 💜
+</div>
+
+</div>
+
+
+<div
+    class="memory-photo"
+    onclick="viewPhoto('photo2.jpg')"
+>
+
+<img
+    src="photo2.jpg"
+    alt="Our memory 2"
+>
+
+<div class="photo-overlay">
+    One of my favorites ✨
+</div>
+
+</div>
+
+
+<div
+    class="memory-photo"
+    onclick="viewPhoto('photo3.jpg')"
+>
+
+<img
+    src="photo3.jpg"
+    alt="Our memory 3"
+>
+
+<div class="photo-overlay">
+    A moment I'll remember 💗
+</div>
+
+</div>
+
+
+<div
+    class="memory-photo"
+    onclick="viewPhoto('photo4.jpg')"
+>
+
+<img
+    src="photo4.jpg"
+    alt="Our memory 4"
+>
+
+<div class="photo-overlay">
+    Another beautiful memory 💜
+</div>
+
+</div>
+
+<div
+    class="memory-photo"
+    onclick="viewPhoto('photo2.jpg')"
+>
+
+<img
+    src="photo5.jpg"
+    alt="Our memory 2"
+>
+
+<div class="photo-overlay">
+    One of my favorites ✨
+</div>
+
+</div>
+<div
+    class="memory-photo"
+    onclick="viewPhoto('photo5.jpg')"
+>
+
+<img
+    src="photo6.jpg"
+    alt="Our memory 2"
+>
+
+<div class="photo-overlay">
+    One of my favorites ✨
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="small-title video-title">
+    A memory in motion
+</div>
+
+
+<div class="video-container">
+
+<video
+    controls
+    playsinline
+    poster=""
+>
+
+<source
+    src="ourvideo.mp4"
+    type="video/mp4"
+>
+
+Your browser does not support
+HTML5 video.
+
+</video>
+
+</div>
+
+
+<button
+    class="btn"
+    onclick="nextPage(6)"
+>
+    Continue 💌
+</button>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 6 — CAKE
+===================================================== -->
+
+<section
+    class="page"
+    id="page6"
+>
+
+<div class="content">
+
+<div class="small-title">
+    Happy anniversary Love
+</div>
+
+
+<div
+    class="cake"
+    id="cake"
+    onclick="blowCandles()"
+>
+
+<div
+    class="cake-layer layer-bottom"
+></div>
+
+
+<div
+    class="cake-layer layer-top"
+></div>
+
+
+<div class="icing"></div>
+
+
+<div class="candle"></div>
+
+<div class="candle"></div>
+
+<div class="candle"></div>
+
+
+<div class="flame"></div>
+
+<div class="flame"></div>
+
+<div class="flame"></div>
+
+
+</div>
+
+
+<h2>
+    Iloveyousomuchhh 🫶
+</h2>
+
+
+<p id="cakeText">
+
+    Tap the cake to blow out
+    the candles.
+
+</p>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 7 — FINAL MESSAGE
+===================================================== -->
+
+<section
+    class="page"
+    id="page7"
+>
+
+<div class="content">
+
+<div class="big-heart">
+    💜
+</div>
+
+
+<div class="small-title">
+    My favorite part
+</div>
+
+
+<h2>
+    More Months and years With You
+</h2>
+
+
+<div class="message-box">
+
+<div class="message-text">
+    
+        happy first anniversary po satin mahal salamat po at pinili mo yung katulad kpo pansensya npo sa mga naging away natin i hope na maging mas better papo tayo para sa isat isat wala na kong mahiling sa isang tulad mopo mapag alaga mapag mahal na kulot kong maliit kahit na malakas mangagat😑 love na love po kita baby kong maliit una palang hindi ko akalain mamahalin mopo ako kagaya ng pinaramdam mopo sakin na kahit meron loko loko ko minsan ayy pinili mo padin po ako ang tagal npo natin sobrang saya kpo sayo sana hindi kpo mag bago at tumaas kana po sana para hindi na kita iinisin bansot mahal na mahal po kita baby kong minsan babae minsan lalake mwaaa iloveyousomuch po happy anniversary po ulit bansot 
+
+    
+</div>
+</div>
+
+
+<button
+    class="btn"
+    onclick="nextPage(8)"
+>
+    There's One More Thing... 🌸
+</button>
+
+
+</div>
+
+</section>
+
+<!-- =====================================================
+     PAGE 8 — FLOWER GARDEN
+===================================================== -->
+
+<section
+    class="page flower-page"
+    id="page8"
+>
+
+<div class="content">
+
+
+<div class="small-title flower-title">
+    One last thing for you
+</div>
+
+
+<h2>
+    Flowers For You 💜
+</h2>
+
+
+<p class="flower-subtitle">
+
+    If I could give you flowers every time
+    I thought about how grateful I am for you,
+    you'd have a garden full of them.
+
+</p>
+
+
+<div class="flower-garden">
+
+
+<!-- FLOWER 1 -->
+
+<div class="realistic-flower">
+
+<div class="blossom">
+
+<div class="petal petal-1"></div>
+
+<div class="petal petal-2"></div>
+
+<div class="petal petal-3"></div>
+
+<div class="petal petal-4"></div>
+
+<div class="petal petal-5"></div>
+
+
+<div class="inner-petal inner-1"></div>
+
+<div class="inner-petal inner-2"></div>
+
+<div class="inner-petal inner-3"></div>
+
+<div class="inner-petal inner-4"></div>
+
+<div class="inner-petal inner-5"></div>
+
+
+<div class="flower-center"></div>
+
+</div>
+
+
+<div class="flower-stem"></div>
+
+
+<div
+    class="flower-leaf leaf-left"
+></div>
+
+<div
+    class="flower-leaf leaf-right"
+></div>
+
+
+</div>
+
+
+<!-- FLOWER 2 -->
+
+<div class="realistic-flower small">
+
+<div class="blossom">
+
+<div class="petal petal-1"></div>
+
+<div class="petal petal-2"></div>
+
+<div class="petal petal-3"></div>
+
+<div class="petal petal-4"></div>
+
+<div class="petal petal-5"></div>
+
+
+<div class="inner-petal inner-1"></div>
+
+<div class="inner-petal inner-2"></div>
+
+<div class="inner-petal inner-3"></div>
+
+<div class="inner-petal inner-4"></div>
+
+<div class="inner-petal inner-5"></div>
+
+
+<div class="flower-center"></div>
+
+</div>
+
+
+<div class="flower-stem"></div>
+
+
+<div
+    class="flower-leaf leaf-left"
+></div>
+
+<div
+    class="flower-leaf leaf-right"
+></div>
+
+
+</div>
+
+
+<!-- FLOWER 3 -->
+
+<div class="realistic-flower">
+
+<div class="blossom">
+
+<div class="petal petal-1"></div>
+
+<div class="petal petal-2"></div>
+
+<div class="petal petal-3"></div>
+
+<div class="petal petal-4"></div>
+
+<div class="petal petal-5"></div>
+
+
+<div class="inner-petal inner-1"></div>
+
+<div class="inner-petal inner-2"></div>
+
+<div class="inner-petal inner-3"></div>
+
+<div class="inner-petal inner-4"></div>
+
+<div class="inner-petal inner-5"></div>
+
+
+<div class="flower-center"></div>
+
+</div>
+
+
+<div class="flower-stem"></div>
+
+
+<div
+    class="flower-leaf leaf-left"
+></div>
+
+<div
+    class="flower-leaf leaf-right"
+></div>
+
+
+</div>
+
+
+<!-- FLOWER 4 -->
+
+<div class="realistic-flower small">
+
+<div class="blossom">
+
+<div class="petal petal-1"></div>
+
+<div class="petal petal-2"></div>
+
+<div class="petal petal-3"></div>
+
+<div class="petal petal-4"></div>
+
+<div class="petal petal-5"></div>
+
+
+<div class="inner-petal inner-1"></div>
+
+<div class="inner-petal inner-2"></div>
+
+<div class="inner-petal inner-3"></div>
+
+<div class="inner-petal inner-4"></div>
+
+<div class="inner-petal inner-5"></div>
+
+
+<div class="flower-center"></div>
+
+</div>
+
+
+<div class="flower-stem"></div>
+
+
+<div
+    class="flower-leaf leaf-left"
+></div>
+
+<div
+    class="flower-leaf leaf-right"
+></div>
+
+
+</div>
+
+
+<!-- FLOWER 5 -->
+
+<div class="realistic-flower">
+
+<div class="blossom">
+
+<div class="petal petal-1"></div>
+
+<div class="petal petal-2"></div>
+
+<div class="petal petal-3"></div>
+
+<div class="petal petal-4"></div>
+
+<div class="petal petal-5"></div>
+
+
+<div class="inner-petal inner-1"></div>
+
+<div class="inner-petal inner-2"></div>
+
+<div class="inner-petal inner-3"></div>
+
+<div class="inner-petal inner-4"></div>
+
+<div class="inner-petal inner-5"></div>
+
+
+<div class="flower-center"></div>
+
+</div>
+
+
+<div class="flower-stem"></div>
+
+
+<div
+    class="flower-leaf leaf-left"
+></div>
+
+<div
+    class="flower-leaf leaf-right"
+></div>
+
+
+</div>
+
+<!-- FLOWER SPARKLES -->
+
+<span
+    class="flower-sparkle"
+    style="
+        left:18%;
+        top:30%;
+    "
+></span>
+
+
+<span
+    class="flower-sparkle"
+    style="
+        left:31%;
+        top:15%;
+        animation-delay:.7s;
+    "
+></span>
+
+
+<span
+    class="flower-sparkle"
+    style="
+        left:68%;
+        top:22%;
+        animation-delay:1.2s;
+    "
+></span>
+
+
+<span
+    class="flower-sparkle"
+    style="
+        left:82%;
+        top:38%;
+        animation-delay:1.8s;
+    "
+></span>
+
+
+</div>
+
+
+<p>
+
+    Just like these flowers, love,
+
+    <br>
+
+    I hope what we have
+    continues to grow 🌱💜
+    
+    <br>
+    
+    iloveyousomuchhh love 😘 🫶 
+
+</p>
+
+
+<button
+    class="btn"
+    onclick="finalFlowerCelebration()"
+>
+    For You, Always 💜
+</button>
+
+
+</div>
+
+</section>
+
+
+</div>
+
+
+<!-- =====================================================
+     FULLSCREEN PHOTO VIEWER
+===================================================== -->
+
+<div
+    class="photo-viewer"
+    id="photoViewer"
+    onclick="closePhoto()"
+>
+
+<button
+    class="close-viewer"
+    onclick="
+        event.stopPropagation();
+        closePhoto();
+    "
+>
+    ×
+</button>
+
+
+<img
+    id="viewerImage"
+    src=""
+    alt="Memory"
+>
+
+
+</div>
+
+
+<script>
+
+/* =====================================================
+   PAGE TRANSITIONS
+===================================================== */
+
+let currentPage = 1;
+
+
+function nextPage(number) {
+
+    const oldPage =
+        document.getElementById(
+            "page" + currentPage
+        );
+
+    const newPage =
+        document.getElementById(
+            "page" + number
+        );
+
+
+    if (!newPage) return;
+
+
+    oldPage.classList.remove(
+        "active"
+    );
+
+    oldPage.classList.add(
+        "exit-left"
+    );
+
+
+    setTimeout(() => {
+
+        oldPage.classList.remove(
+            "exit-left"
+        );
+
+        newPage.classList.add(
+            "active"
+        );
+
+    }, 100);
+
+
+    currentPage =
+        number;
+
+
+    createSparkles(18);
+
+}
+
+
+/* =====================================================
+   ENVELOPE
+===================================================== */
+
+function openEnvelope() {
+
+    const envelope =
+        document.getElementById(
+            "envelope"
+        );
+
+
+    envelope.classList.add(
+        "open"
+    );
+
+
+    createSparkles(30);
+
+    createHearts(10);
+
+
+    setTimeout(() => {
+
+        nextPage(2);
+
+    }, 1100);
+
+}
+
+
+/* =====================================================
+   GIFT
+===================================================== */
+
+let giftOpened =
+    false;
+
+
+function openGift() {
+
+    if (giftOpened)
+        return;
+
+
+    giftOpened =
+        true;
+
+
+    const gift =
+        document.getElementById(
+            "gift"
+        );
+
+
+    gift.classList.add(
+        "open"
+    );
+
+
+    createHearts(30);
+
+    createSparkles(35);
+
+
+    setTimeout(() => {
+
+        nextPage(4);
+
+    }, 1200);
+
+}
+
+
+/* =====================================================
+   MESSAGES
+===================================================== */
+
+const messages = [
+
+`
+kulot ko nato ganda mopo sobraaa
+
+`,
+
+`
+im always be here for you bansot
+
+`,
+
+`
+sana tumaas kana pooo
+
+`,
+
+`
+pahug at kiss nga madamiiiii miss na po kita kulot kong maemae
+
+`,
+
+`
+mahal na mahal kita kahit maldita ka
+
+`,
+
+`
+im always be your biggest supporter
+
+`
+
+];
+
+
+let messageIndex =
+    0;
+
+
+function nextMessage() {
+
+    messageIndex++;
+
+
+    const text =
+        document.getElementById(
+            "messageText"
+        );
+
+
+    if (
+        messageIndex >=
+        messages.length
+    ) {
+
+        nextPage(5);
+
+        return;
+
+    }
+
+
+    text.style.opacity =
+        "0";
+
+
+    text.style.transform =
+        "translateY(15px)";
+
+
+    setTimeout(() => {
+
+        text.innerHTML =
+            messages[
+                messageIndex
+            ];
+
+
+        text.style.opacity =
+            "1";
+
+
+        text.style.transform =
+            "translateY(0)";
+
+    }, 400);
+
+
+    createSparkles(12);
+
+}
+
+
+/* =====================================================
+   PHOTO VIEWER
+===================================================== */
+
+function viewPhoto(image) {
+
+    const viewer =
+        document.getElementById(
+            "photoViewer"
+        );
+
+
+    const viewerImage =
+        document.getElementById(
+            "viewerImage"
+        );
+
+
+    viewerImage.src =
+        image;
+
+
+    viewer.classList.add(
+        "show"
+    );
+
+
+    createSparkles(15);
+
+}
+
+
+function closePhoto() {
+
+    const viewer =
+        document.getElementById(
+            "photoViewer"
+        );
+
+
+    viewer.classList.remove(
+        "show"
+    );
+
+}
+
+
+let cakeClicked =
+    false;
+
+
+function blowCandles() {
+
+    if (cakeClicked)
+        return;
+
+
+    cakeClicked =
+        true;
+
+
+    const cake =
+        document.getElementById(
+            "cake"
+        );
+
+
+    const text =
+        document.getElementById(
+            "cakeText"
+        );
+
+
+    cake.classList.add(
+        "blown"
+    );
+
+
+    text.innerHTML =
+        "Make a wish... ✨";
+
+
+    createSparkles(45);
+
+    createHearts(30);
+
+
+    setTimeout(() => {
+
+        text.innerHTML =
+            "Your wish is waiting for you. 💜";
+
+    }, 1600);
+
+
+    setTimeout(() => {
+
+        nextPage(7);
+
+    }, 2800);
+
+}
+
+
+
+function finalFlowerCelebration() {
+
+    createConfetti(180);
+
+    createHearts(100);
+
+    createSparkles(100);
+
+
+    const garden =
+        document.querySelector(
+            ".flower-garden"
+        );
+
+
+    garden.animate(
+
+        [
+            {
+                transform:
+                    "scale(1)"
+            },
+
+            {
+                transform:
+                    "scale(1.04)"
+            },
+
+            {
+                transform:
+                    "scale(1)"
+            }
+
+        ],
+
+        {
+            duration:
+                1000,
+
+            easing:
+                "ease-in-out"
+        }
+
+    );
+
+
+}
+
+
+
+function createHearts(amount) {
+
+    const hearts = [
+
+        "💜",
+        "♡",
+        "♥",
+        "💗",
+        "💖",
+        "✨"
+
+    ];
+
+
+    for (
+        let i = 0;
+        i < amount;
+        i++
+    ) {
+
+        const heart =
+            document.createElement(
+                "div"
+            );
+
+
+        heart.className =
+            "heart";
+
+
+        heart.innerHTML =
+            hearts[
+                Math.floor(
+                    Math.random() *
+                    hearts.length
+                )
+            ];
+
+
+        heart.style.left =
+            Math.random() *
+            100 +
+            "vw";
+
+
+        heart.style.fontSize =
+            (
+                Math.random() *
+                20 +
+                12
+            ) +
+            "px";
+
+
+        heart.style.animationDuration =
+            (
+                Math.random() *
+                4 +
+                4
+            ) +
+            "s";
+
+
+        heart.style.animationDelay =
+            Math.random() +
+            "s";
+
+
+        document.body.appendChild(
+            heart
+        );
+
+
+        setTimeout(() => {
+
+            heart.remove();
+
+        }, 8000);
+
+    }
+
+}
+
+
+
+function createSparkles(amount) {
+
+    for (
+        let i = 0;
+        i < amount;
+        i++
+    ) {
+
+        const sparkle =
+            document.createElement(
+                "div"
+            );
+
+
+        sparkle.className =
+            "sparkle";
+
+
+        sparkle.style.left =
+            Math.random() *
+            100 +
+            "vw";
+
+
+        sparkle.style.top =
+            Math.random() *
+            100 +
+            "vh";
+
+
+        sparkle.style.animationDelay =
+            Math.random() *
+            .8 +
+            "s";
+
+
+        document.body.appendChild(
+            sparkle
+        );
+
+
+        setTimeout(() => {
+
+            sparkle.remove();
+
+        }, 2200);
+
+    }
+
+}
+
+
+
+function createConfetti(amount) {
+
+    const colors = [
+
+        "#c084fc",
+        "#e879f9",
+        "#f0abfc",
+        "#ffffff",
+        "#8b5cf6",
+        "#a855f7"
+
+    ];
+
+
+    for (
+        let i = 0;
+        i < amount;
+        i++
+    ) {
+
+        const piece =
+            document.createElement(
+                "div"
+            );
+
+
+        piece.className =
+            "confetti";
+
+
+        piece.style.left =
+            Math.random() *
+            100 +
+            "vw";
+
+
+        piece.style.background =
+            colors[
+                Math.floor(
+                    Math.random() *
+                    colors.length
+                )
+            ];
+
+
+        piece.style.animationDuration =
+            (
+                Math.random() *
+                3 +
+                2
+            ) +
+            "s";
+
+
+        piece.style.animationDelay =
+            Math.random() *
+            1.5 +
+            "s";
+
+
+        piece.style.transform =
+            `rotate(
+                ${Math.random() * 360}deg
+            )`;
+
+
+        document.body.appendChild(
+            piece
+        );
+
+
+        setTimeout(() => {
+
+            piece.remove();
+
+        }, 6000);
+
+    }
+
+}
+
+
+
+setInterval(() => {
+
+    if (
+        Math.random() > .45
+    ) {
+
+        createHearts(1);
+
+    }
+
+}, 1800);
+
+
+
+document.addEventListener(
+    "pointermove",
+    event => {
+
+        if (
+            Math.random() > .88
+        ) {
+
+            const sparkle =
+                document.createElement(
+                    "div"
+                );
+
+
+            sparkle.className =
+                "sparkle";
+
+
+            sparkle.style.left =
+                event.clientX +
+                "px";
+
+
+            sparkle.style.top =
+                event.clientY +
+                "px";
+
+
+            document.body.appendChild(
+                sparkle
+            );
+
+
+            setTimeout(() => {
+
+                sparkle.remove();
+
+            }, 1500);
+
+        }
+
+    }
+);
+
+
+const musicButton =
+    document.getElementById(
+        "musicButton"
+    );
+
+
+const audio =
+    new Audio(
+        "music1.mp3"
+    );
+
+
+audio.loop =
+    true;
+
+
+let musicPlaying =
+    false;
+
+
+musicButton.addEventListener(
+    "click",
+    () => {
+
+        if (
+            !musicPlaying
+        ) {
+
+            audio.play()
+                .then(() => {
+
+                    musicPlaying =
+                        true;
+
+                    musicButton.innerHTML =
+                        "🔊";
+
+                })
+                .catch(() => {
+
+                    musicButton.innerHTML =
+                        "♫";
+
+                });
+
+        }
+
+        else {
+
+            audio.pause();
+
+            musicPlaying =
+                false;
+
+            musicButton.innerHTML =
+                "♫";
+
+        }
+
+    }
+);
+
+
+createSparkles(20);
+
+</script>
+
+</body>
+</html>
